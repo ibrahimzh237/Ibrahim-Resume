@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Ibrahim Zaharin</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    <span class="logo-name">IBRAHIM ZAHARIN</span>
+                    <span class="logo-id">2023272066 (HomePage)</span>
+                </div>
+            </a>
+            <ul>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="experience.html">Experience</a></li> 
+                <li><a href="education.html" class="active-nav-link">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+            <span id="current-datetime" class="datetime-display"></span>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="page-hero">
+            <h1 class="headline-scroll">My journey.</h1>
+            <p class="subhead-scroll">A chronicle of academic milestones.</p>
+        </section>
+
+        <section class="academic-scroll-wrapper">
+            
+            <div class="scroll-entry current-focus">
+                <div class="date-tag">
+                    <span class="year-text">2023 – Present</span>
+                    <div class="institution-visuals">
+                         <img src="ulogo.png" alt="UiTM Logo" class="institution-logo">
+                        </div>
+                </div>
+                
+                <div class="scroll-marker"></div>
+
+                <div class="scroll-content">
+                    <h2 class="scroll-title">Diploma In Information Management</h2>
+                    <p class="institution-name">Universiti Teknologi MARA (UiTM)</p>
+                    <p class="scroll-summary">Pursuing Diploma in Information Management, focused on IT systems, data management, and software development, equipping students with practical skills to design, implement  and manage efficient information systems.</p>
+
+                    <div class="scroll-achievements">
+                        <span class="achievement-item highlight">
+                            <i class="fas fa-gem"></i> Current GPA: 3.45
+                        </span>
+                        <span class="achievement-item">
+                            <i class="fas fa-award"></i> Dean's List (1 Semesters)
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-entry completed">
+                <div class="date-tag">
+                    <span class="year-text">2018 – 2023</span>
+                    <div class="institution-visuals">
+                        <img src="smkbsd1.jpg" alt="Politeknik Logo" class="institution-logo">
+                        </div>
+                </div>
+                
+                <div class="scroll-marker"></div>
+
+                <div class="scroll-content">
+                    <h2 class="scroll-title">Sijil Pelajaran Malaysia (SPM)</h2>
+                    <p class="institution-name">Smk Bandar Sri Damansara 1</p>
+                    <p class="scroll-summary">Successfully completed secondary education, building a strong foundation in business, accounting, and financial management principles.</p>
+                    
+                    <div class="scroll-achievements">
+                        <span class="achievement-item">
+                            <i class="fas fa-check-double"></i> Served as the chairperson of the football club under the institution’s co-curricular program
+                        </span>
+                        <span class="achievement-item">
+                            <i class="fas fa-code"></i> Accounting Stream
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-entry foundational">
+                <div class="date-tag">
+                    <span class="year-text">2012 – 2017</span>
+                    <div class="institution-visuals">
+                        <img src="bsd1.png" alt="SMK Logo" class="institution-logo">
+                        </div>
+                </div>
+                
+                <div class="scroll-marker"></div>
+                
+                <div class="scroll-content">
+                    <h2 class="scroll-title">(UPSR)</h2>
+                    <p class="institution-name">Sk Bandar Sri Damansara 1</p>
+                    <p class="scroll-summary">Successfully completed primary education with a strong foundation in core subjects, including Mathematics, Science, and Bahasa Malaysia.</p>
+                    
+                    <div class="scroll-achievements">
+                        <span class="achievement-item">
+                            <i class="fas fa-star-of-life"></i> Achieved 2 A's
+                        </span>
+                        <span class="achievement-item">
+                            <i class="fas fa-school"></i> Served as ICT Prefect, supporting technology use and digital initiatives in school.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ibrahim Zaharin. All rights reserved. | Statement of Responsibility/Ownership.</p>
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+            const formattedTime = now.toLocaleTimeString('en-US', timeOptions);
+            const dateOptions = { weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric' };
+            const formattedDate = now.toLocaleDateString('en-US', dateOptions);
+            const finalDisplay = `${formattedTime} • ${formattedDate}`;
+
+            const dateTimeElement = document.getElementById('current-datetime');
+            if (dateTimeElement) {
+                dateTimeElement.textContent = finalDisplay;
+            }
+        }
+        
+        updateDateTime();
+        setInterval(updateDateTime, 1000); 
+    </script>
+</body>
+</html>
