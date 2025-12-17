@@ -1906,17 +1906,7 @@ footer {
         width: auto;
     }
 }
-/* ======================================= */
-/* 9. LAST UPDATED STYLES (BOLDED) */
-/* ======================================= */
 
-#last-updated {
-    display: block; 
-    margin-top: 5px;
-    font-size: 20px;
-    color: black; 
-    font-weight: bold; /* <-- CRITICAL CHANGE: Make the text bold */
-}
 /* ======================================= */
 /* 9. DATE INFO STYLES (Creation and Last Updated) */
 /* ======================================= */
@@ -1924,15 +1914,16 @@ footer {
 #creation-date {
     display: block;
     margin-top: 10px; /* Space it out from the copyright line */
-    font-size: 13px;
-    color: #999; /* Slightly lighter gray */
+    font-size: 15px;
+    color: black; 
     font-weight: 300;
 }
 
 #last-updated {
     display: block; 
     margin-top: 5px;
-    font-size: 13px;
-    color: #888; 
+    font-size: 15px;
+    color: black; 
     font-weight: bold; /* Remains bold for emphasis */
+
 }
